@@ -14,11 +14,11 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: docker.io/stefanprodan/podinfo:6.5.0
+        image: nginx:stable
         ports:
-        - containerPort: 9898
+        - containerPort: 80
         env:
-        - name: PODINFO_UI_MESSAGE
+        - name: DEMO_MESSAGE
           valueFrom:
             secretKeyRef:
               name: demo-secret
