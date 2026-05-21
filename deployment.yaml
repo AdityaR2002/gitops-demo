@@ -14,7 +14,7 @@ spec:
     spec:
       containers:
       - name: podinfo
-        image: stefanprodan/podinfo:6.5.0
+        image: docker.io/stefanprodan/podinfo:6.5.0
         ports:
         - containerPort: 9898
         env:
